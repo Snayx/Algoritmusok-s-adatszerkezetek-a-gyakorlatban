@@ -58,8 +58,7 @@ function swapNodes(indexes: number[][], queries: number[]): number[][] {
     }
 
     const result: number[][] = [];
-
-    // Perform each query (swap operation)
+    
     for (const k of queries) {
         swapAtDepth(root, k);
         const traversal: number[] = [];
